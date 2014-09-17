@@ -1,0 +1,6 @@
+--bail
+--reporter spec
+--reporter mocha-slide-reporter
+--recursive
+--require should
+--compilers coffee:coffee-script/register

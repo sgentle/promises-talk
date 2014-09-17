@@ -1,0 +1,21 @@
+{
+  "name": "promises-talk",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "coffee util/watch.coffee"
+  },
+  "author": "Sam Gentle <sam@samgentle.com>",
+  "license": "MIT",
+  "dependencies": {
+    "flip": "^0.1.1",
+    "should": "^4.0.4",
+    "bluebird": "^2.3.2",
+    "request": "^2.42.0",
+    "nock": "^0.47.0",
+    "chokidar": "^0.8.4",
+    "coffee-script": "^1.8.0",
+    "mocha-slide-reporter": "git+https://github.com/sgentle/mocha-slide-reporter.git"
+  }
+}
