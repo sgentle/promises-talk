@@ -9,20 +9,18 @@ describe "1. This talk", ->
   it "is about Promises", ->
     thistalk.should.match /promises/
 
-  it "doesn't try to answer 'what is a Promise?'", ->
-    thistalk.should.not.match /what is a Promise/
+  it "doesn't try to answer 'what is the P-word?'", ->
+    thistalk.should.not.match /[w]hat is a Promise/
 
   it "doesn't try to be theoretical", ->
-    thistalk.should.not.match /monads/
-    thistalk.should.not.match /functors/
-    thistalk.should.not.match /quantum mechanics/
-    thistalk.should.not.match /Tsiolkovsky rocket equation/
-    thistalk.should.not.match
+    thistalk.should.not.match /[m]onads/
+    thistalk.should.not.match /[f]unctors/
+    thistalk.should.not.match /[q]uantum mechanics/
+    thistalk.should.not.match /[T]siolkovsky rocket equation/
+    thistalk.should.not.match /[r]egexes/
 
-  it "contains no silly Promise puns", ->
-    thistalk.should.not.match /I promise you/
-    thistalk.should.not.match /that's a promise/
-    thistalk.should.not.match /broken promises/
-    thistalk.should.not.match
-
-  it "not finished yet", -> throw new Error
+  it "contains silly Promise puns", ->
+    thistalk.should.not.match /[I] promise you/
+    thistalk.should.not.match /[t]hat's a promise/
+    thistalk.should.not.match /[b]roken promises/
+    thistalk.should.not.match /[I]'ll get back to you/
